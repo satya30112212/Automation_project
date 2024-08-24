@@ -1,0 +1,417 @@
+Microsoft Windows [Version 10.0.22631.3880]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Windows\System32>python --version
+Python 3.12.4
+
+C:\Windows\System32>pip --version
+pip 24.0 from C:\Program Files\Python312\Lib\site-packages\pip (python 3.12)
+
+C:\Windows\System32>pip install robotframework
+Collecting robotframework
+  Downloading robotframework-7.0.1-py3-none-any.whl.metadata (7.5 kB)
+Downloading robotframework-7.0.1-py3-none-any.whl (727 kB)
+   ---------------------------------------- 727.6/727.6 kB 5.7 MB/s eta 0:00:00
+Installing collected packages: robotframework
+Successfully installed robotframework-7.0.1
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip list
+Package        Version
+-------------- -------
+pip            24.0
+robotframework 7.0.1
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip install requests
+Collecting requests
+  Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+Collecting charset-normalizer<4,>=2 (from requests)
+  Downloading charset_normalizer-3.3.2-cp312-cp312-win_amd64.whl.metadata (34 kB)
+Collecting idna<4,>=2.5 (from requests)
+  Downloading idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+Collecting urllib3<3,>=1.21.1 (from requests)
+  Downloading urllib3-2.2.2-py3-none-any.whl.metadata (6.4 kB)
+Collecting certifi>=2017.4.17 (from requests)
+  Downloading certifi-2024.7.4-py3-none-any.whl.metadata (2.2 kB)
+Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+   ---------------------------------------- 64.9/64.9 kB ? eta 0:00:00
+Downloading certifi-2024.7.4-py3-none-any.whl (162 kB)
+   ---------------------------------------- 163.0/163.0 kB 9.5 MB/s eta 0:00:00
+Downloading charset_normalizer-3.3.2-cp312-cp312-win_amd64.whl (100 kB)
+   ---------------------------------------- 100.4/100.4 kB ? eta 0:00:00
+Downloading idna-3.7-py3-none-any.whl (66 kB)
+   ---------------------------------------- 66.8/66.8 kB ? eta 0:00:00
+Downloading urllib3-2.2.2-py3-none-any.whl (121 kB)
+   ---------------------------------------- 121.4/121.4 kB ? eta 0:00:00
+Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+Successfully installed certifi-2024.7.4 charset-normalizer-3.3.2 idna-3.7 requests-2.32.3 urllib3-2.2.2
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>
+C:\Windows\System32>pip install robotframework-requests
+Collecting robotframework-requests
+  Downloading robotframework_requests-0.9.7-py3-none-any.whl.metadata (7.2 kB)
+Requirement already satisfied: robotframework in c:\program files\python312\lib\site-packages (from robotframework-requests) (7.0.1)
+Requirement already satisfied: requests in c:\program files\python312\lib\site-packages (from robotframework-requests) (2.32.3)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\program files\python312\lib\site-packages (from requests->robotframework-requests) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\program files\python312\lib\site-packages (from requests->robotframework-requests) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\program files\python312\lib\site-packages (from requests->robotframework-requests) (2.2.2)
+Requirement already satisfied: certifi>=2017.4.17 in c:\program files\python312\lib\site-packages (from requests->robotframework-requests) (2024.7.4)
+Downloading robotframework_requests-0.9.7-py3-none-any.whl (21 kB)
+Installing collected packages: robotframework-requests
+Successfully installed robotframework-requests-0.9.7
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip install robotframework-jsonlibrary
+Collecting robotframework-jsonlibrary
+  Downloading robotframework-jsonlibrary-0.5.tar.gz (5.5 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: robotframework>=3.0 in c:\program files\python312\lib\site-packages (from robotframework-jsonlibrary) (7.0.1)
+Collecting jsonpath-ng>=1.4.3 (from robotframework-jsonlibrary)
+  Downloading jsonpath_ng-1.6.1-py3-none-any.whl.metadata (18 kB)
+Collecting jsonschema>=2.5.1 (from robotframework-jsonlibrary)
+  Downloading jsonschema-4.23.0-py3-none-any.whl.metadata (7.9 kB)
+Collecting ply (from jsonpath-ng>=1.4.3->robotframework-jsonlibrary)
+  Downloading ply-3.11-py2.py3-none-any.whl.metadata (844 bytes)
+Collecting attrs>=22.2.0 (from jsonschema>=2.5.1->robotframework-jsonlibrary)
+  Downloading attrs-23.2.0-py3-none-any.whl.metadata (9.5 kB)
+Collecting jsonschema-specifications>=2023.03.6 (from jsonschema>=2.5.1->robotframework-jsonlibrary)
+  Downloading jsonschema_specifications-2023.12.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting referencing>=0.28.4 (from jsonschema>=2.5.1->robotframework-jsonlibrary)
+  Downloading referencing-0.35.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting rpds-py>=0.7.1 (from jsonschema>=2.5.1->robotframework-jsonlibrary)
+  Downloading rpds_py-0.19.0-cp312-none-win_amd64.whl.metadata (4.2 kB)
+Downloading jsonpath_ng-1.6.1-py3-none-any.whl (29 kB)
+Downloading jsonschema-4.23.0-py3-none-any.whl (88 kB)
+   ---------------------------------------- 88.5/88.5 kB 4.9 MB/s eta 0:00:00
+Downloading attrs-23.2.0-py3-none-any.whl (60 kB)
+   ---------------------------------------- 60.8/60.8 kB ? eta 0:00:00
+Downloading jsonschema_specifications-2023.12.1-py3-none-any.whl (18 kB)
+Downloading referencing-0.35.1-py3-none-any.whl (26 kB)
+Downloading rpds_py-0.19.0-cp312-none-win_amd64.whl (211 kB)
+   ---------------------------------------- 211.5/211.5 kB ? eta 0:00:00
+Downloading ply-3.11-py2.py3-none-any.whl (49 kB)
+   ---------------------------------------- 49.6/49.6 kB 2.5 MB/s eta 0:00:00
+Building wheels for collected packages: robotframework-jsonlibrary
+  Building wheel for robotframework-jsonlibrary (pyproject.toml) ... done
+  Created wheel for robotframework-jsonlibrary: filename=robotframework_jsonlibrary-0.5-py3-none-any.whl size=5107 sha256=6c1450b489b5bae63a7530ddeeb0327af68f58a3cf2d3dc4b48ccaa338bf35cf
+  Stored in directory: c:\users\hp\appdata\local\pip\cache\wheels\8c\af\9e\477b5e33cc03d49db9a7de1264676dabb3c613d8d48ac2f919
+Successfully built robotframework-jsonlibrary
+Installing collected packages: ply, rpds-py, jsonpath-ng, attrs, referencing, jsonschema-specifications, jsonschema, robotframework-jsonlibrary
+Successfully installed attrs-23.2.0 jsonpath-ng-1.6.1 jsonschema-4.23.0 jsonschema-specifications-2023.12.1 ply-3.11 referencing-0.35.1 robotframework-jsonlibrary-0.5 rpds-py-0.19.0
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>
+C:\Windows\System32>pip list
+Package                    Version
+-------------------------- ---------
+attrs                      23.2.0
+certifi                    2024.7.4
+charset-normalizer         3.3.2
+idna                       3.7
+jsonpath-ng                1.6.1
+jsonschema                 4.23.0
+jsonschema-specifications  2023.12.1
+pip                        24.0
+ply                        3.11
+referencing                0.35.1
+requests                   2.32.3
+robotframework             7.0.1
+robotframework-jsonlibrary 0.5
+robotframework-requests    0.9.7
+rpds-py                    0.19.0
+urllib3                    2.2.2
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip install robotframework-json2dictionary
+Collecting robotframework-json2dictionary
+  Downloading robotframework-json2dictionary-0.1.1.tar.gz (2.6 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Building wheels for collected packages: robotframework-json2dictionary
+  Building wheel for robotframework-json2dictionary (pyproject.toml) ... done
+  Created wheel for robotframework-json2dictionary: filename=robotframework_json2dictionary-0.1.1-py3-none-any.whl size=2455 sha256=a2dfc3dd5e9674d6c149156c15d32900d2a649704d861c1f396073764fad5140
+  Stored in directory: c:\users\hp\appdata\local\pip\cache\wheels\df\40\ca\eec00c105a0de73bf9570c2d845c655dccb99566f50188cb4b
+Successfully built robotframework-json2dictionary
+Installing collected packages: robotframework-json2dictionary
+Successfully installed robotframework-json2dictionary-0.1.1
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>
+C:\Windows\System32>pip list
+Package                        Version
+------------------------------ ---------
+attrs                          23.2.0
+certifi                        2024.7.4
+charset-normalizer             3.3.2
+idna                           3.7
+jsonpath-ng                    1.6.1
+jsonschema                     4.23.0
+jsonschema-specifications      2023.12.1
+pip                            24.0
+ply                            3.11
+referencing                    0.35.1
+requests                       2.32.3
+robotframework                 7.0.1
+robotframework-json2dictionary 0.1.1
+robotframework-jsonlibrary     0.5
+robotframework-requests        0.9.7
+rpds-py                        0.19.0
+urllib3                        2.2.2
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip install robotframework-jsonquery
+Collecting robotframework-jsonquery
+  Downloading robotframework_jsonquery-1.0.3-py3-none-any.whl.metadata (2.1 kB)
+Collecting jmespath<2 (from robotframework-jsonquery)
+  Downloading jmespath-1.0.1-py3-none-any.whl.metadata (7.6 kB)
+Requirement already satisfied: jsonpath_ng<2 in c:\program files\python312\lib\site-packages (from robotframework-jsonquery) (1.6.1)
+Requirement already satisfied: robotframework in c:\program files\python312\lib\site-packages (from robotframework-jsonquery) (7.0.1)
+Requirement already satisfied: ply in c:\program files\python312\lib\site-packages (from jsonpath_ng<2->robotframework-jsonquery) (3.11)
+Downloading robotframework_jsonquery-1.0.3-py3-none-any.whl (4.6 kB)
+Downloading jmespath-1.0.1-py3-none-any.whl (20 kB)
+Installing collected packages: jmespath, robotframework-jsonquery
+Successfully installed jmespath-1.0.1 robotframework-jsonquery-1.0.3
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip list
+Package                        Version
+------------------------------ ---------
+attrs                          23.2.0
+certifi                        2024.7.4
+charset-normalizer             3.3.2
+idna                           3.7
+jmespath                       1.0.1
+jsonpath-ng                    1.6.1
+jsonschema                     4.23.0
+jsonschema-specifications      2023.12.1
+pip                            24.0
+ply                            3.11
+referencing                    0.35.1
+requests                       2.32.3
+robotframework                 7.0.1
+robotframework-json2dictionary 0.1.1
+robotframework-jsonlibrary     0.5
+robotframework-jsonquery       1.0.3
+robotframework-requests        0.9.7
+rpds-py                        0.19.0
+urllib3                        2.2.2
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>pip install robotframework-jsonschemalibrary
+Collecting robotframework-jsonschemalibrary
+  Downloading robotframework-jsonschemalibrary-1.0.tar.gz (2.4 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: robotframework in c:\program files\python312\lib\site-packages (from robotframework-jsonschemalibrary) (7.0.1)
+Requirement already satisfied: jsonschema in c:\program files\python312\lib\site-packages (from robotframework-jsonschemalibrary) (4.23.0)
+Requirement already satisfied: attrs>=22.2.0 in c:\program files\python312\lib\site-packages (from jsonschema->robotframework-jsonschemalibrary) (23.2.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in c:\program files\python312\lib\site-packages (from jsonschema->robotframework-jsonschemalibrary) (2023.12.1)
+Requirement already satisfied: referencing>=0.28.4 in c:\program files\python312\lib\site-packages (from jsonschema->robotframework-jsonschemalibrary) (0.35.1)
+Requirement already satisfied: rpds-py>=0.7.1 in c:\program files\python312\lib\site-packages (from jsonschema->robotframework-jsonschemalibrary) (0.19.0)
+Building wheels for collected packages: robotframework-jsonschemalibrary
+  Building wheel for robotframework-jsonschemalibrary (pyproject.toml) ... done
+  Created wheel for robotframework-jsonschemalibrary: filename=robotframework_jsonschemalibrary-1.0-py3-none-any.whl size=2705 sha256=f60944e012a3582f0974c8faf6859c3881cf04d87adf2f5a881b2d633b6c969f
+  Stored in directory: c:\users\hp\appdata\local\pip\cache\wheels\cc\27\dc\b8102b984960229a81ddd844bd568f76b1045c4810ab78f685
+Successfully built robotframework-jsonschemalibrary
+Installing collected packages: robotframework-jsonschemalibrary
+Successfully installed robotframework-jsonschemalibrary-1.0
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>
+C:\Windows\System32>pip install robotframework-jsonvalidator
+Collecting robotframework-jsonvalidator
+  Downloading robotframework_jsonvalidator-2.0.0-py2.py3-none-any.whl.metadata (3.9 kB)
+Collecting jsonpath-rw-ext>=1.0.0 (from robotframework-jsonvalidator)
+  Downloading jsonpath_rw_ext-1.2.2-py2.py3-none-any.whl.metadata (5.3 kB)
+Requirement already satisfied: jsonschema>=2.5.1 in c:\program files\python312\lib\site-packages (from robotframework-jsonvalidator) (4.23.0)
+Collecting objectpath>=0.5 (from robotframework-jsonvalidator)
+  Downloading objectpath-0.6.1-py2.py3-none-any.whl.metadata (4.0 kB)
+Collecting pyjsonselect>=0.2.2 (from robotframework-jsonvalidator)
+  Downloading pyjsonselect-0.2.2.tar.gz (8.9 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: robotframework>=3.0.1 in c:\program files\python312\lib\site-packages (from robotframework-jsonvalidator) (7.0.1)
+Collecting jsonpath-rw>=1.2.0 (from jsonpath-rw-ext>=1.0.0->robotframework-jsonvalidator)
+  Downloading jsonpath-rw-1.4.0.tar.gz (13 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Collecting pbr>=1.8 (from jsonpath-rw-ext>=1.0.0->robotframework-jsonvalidator)
+  Downloading pbr-6.0.0-py2.py3-none-any.whl.metadata (1.3 kB)
+Requirement already satisfied: attrs>=22.2.0 in c:\program files\python312\lib\site-packages (from jsonschema>=2.5.1->robotframework-jsonvalidator) (23.2.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in c:\program files\python312\lib\site-packages (from jsonschema>=2.5.1->robotframework-jsonvalidator) (2023.12.1)
+Requirement already satisfied: referencing>=0.28.4 in c:\program files\python312\lib\site-packages (from jsonschema>=2.5.1->robotframework-jsonvalidator) (0.35.1)
+Requirement already satisfied: rpds-py>=0.7.1 in c:\program files\python312\lib\site-packages (from jsonschema>=2.5.1->robotframework-jsonvalidator) (0.19.0)
+Requirement already satisfied: ply in c:\program files\python312\lib\site-packages (from jsonpath-rw>=1.2.0->jsonpath-rw-ext>=1.0.0->robotframework-jsonvalidator) (3.11)
+Collecting decorator (from jsonpath-rw>=1.2.0->jsonpath-rw-ext>=1.0.0->robotframework-jsonvalidator)
+  Downloading decorator-5.1.1-py3-none-any.whl.metadata (4.0 kB)
+Collecting six (from jsonpath-rw>=1.2.0->jsonpath-rw-ext>=1.0.0->robotframework-jsonvalidator)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Downloading robotframework_jsonvalidator-2.0.0-py2.py3-none-any.whl (10 kB)
+Downloading jsonpath_rw_ext-1.2.2-py2.py3-none-any.whl (19 kB)
+Downloading objectpath-0.6.1-py2.py3-none-any.whl (20 kB)
+Downloading pbr-6.0.0-py2.py3-none-any.whl (107 kB)
+   ---------------------------------------- 107.5/107.5 kB ? eta 0:00:00
+Downloading decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: pyjsonselect, jsonpath-rw
+  Building wheel for pyjsonselect (pyproject.toml) ... done
+  Created wheel for pyjsonselect: filename=pyjsonselect-0.2.2-py3-none-any.whl size=7765 sha256=14ddaeb9d046d079197a540fc5827728c2196f38caf18e9dee5aa7604261b11f
+  Stored in directory: c:\users\hp\appdata\local\pip\cache\wheels\5b\83\1f\a751441169867d4a76006dd2629a1d26be140d6b05341c870d
+  Building wheel for jsonpath-rw (pyproject.toml) ... done
+  Created wheel for jsonpath-rw: filename=jsonpath_rw-1.4.0-py3-none-any.whl size=15180 sha256=b8c20b59703f19caa811c8282cc11729d9e6073da41c83553ce7d9022b6d24d8
+  Stored in directory: c:\users\hp\appdata\local\pip\cache\wheels\e5\8d\50\ee73263c97069bd6040ff40633d444fefaac7beff73abe81a7
+Successfully built pyjsonselect jsonpath-rw
+Installing collected packages: pyjsonselect, objectpath, six, pbr, decorator, jsonpath-rw, jsonpath-rw-ext, robotframework-jsonvalidator
+Successfully installed decorator-5.1.1 jsonpath-rw-1.4.0 jsonpath-rw-ext-1.2.2 objectpath-0.6.1 pbr-6.0.0 pyjsonselect-0.2.2 robotframework-jsonvalidator-2.0.0 six-1.16.0
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>
+C:\Windows\System32>pip install robotframework-requests-extension
+Collecting robotframework-requests-extension
+  Downloading robotframework-requests-extension-0.0.6.tar.gz (5.3 kB)
+  Installing build dependencies ... done
+  Getting requirements to build wheel ... done
+  Preparing metadata (pyproject.toml) ... done
+Requirement already satisfied: robotframework in c:\program files\python312\lib\site-packages (from robotframework-requests-extension) (7.0.1)
+Requirement already satisfied: robotframework-requests in c:\program files\python312\lib\site-packages (from robotframework-requests-extension) (0.9.7)
+Requirement already satisfied: requests in c:\program files\python312\lib\site-packages (from robotframework-requests-extension) (2.32.3)
+Requirement already satisfied: jsonschema in c:\program files\python312\lib\site-packages (from robotframework-requests-extension) (4.23.0)
+Requirement already satisfied: attrs>=22.2.0 in c:\program files\python312\lib\site-packages (from jsonschema->robotframework-requests-extension) (23.2.0)
+Requirement already satisfied: jsonschema-specifications>=2023.03.6 in c:\program files\python312\lib\site-packages (from jsonschema->robotframework-requests-extension) (2023.12.1)
+Requirement already satisfied: referencing>=0.28.4 in c:\program files\python312\lib\site-packages (from jsonschema->robotframework-requests-extension) (0.35.1)
+Requirement already satisfied: rpds-py>=0.7.1 in c:\program files\python312\lib\site-packages (from jsonschema->robotframework-requests-extension) (0.19.0)
+Requirement already satisfied: charset-normalizer<4,>=2 in c:\program files\python312\lib\site-packages (from requests->robotframework-requests-extension) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in c:\program files\python312\lib\site-packages (from requests->robotframework-requests-extension) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\program files\python312\lib\site-packages (from requests->robotframework-requests-extension) (2.2.2)
+Requirement already satisfied: certifi>=2017.4.17 in c:\program files\python312\lib\site-packages (from requests->robotframework-requests-extension) (2024.7.4)
+Building wheels for collected packages: robotframework-requests-extension
+  Building wheel for robotframework-requests-extension (pyproject.toml) ... done
+  Created wheel for robotframework-requests-extension: filename=robotframework_requests_extension-0.0.6-py3-none-any.whl size=5426 sha256=353916f5b6a107e5d03b285f5c0b42d4b19a1a91ef1f80d8764cd6b9d7fe6f27
+  Stored in directory: c:\users\hp\appdata\local\pip\cache\wheels\97\68\89\6a5ce18836301db8484fd36588d19e79da6987f25544aa8030
+Successfully built robotframework-requests-extension
+Installing collected packages: robotframework-requests-extension
+Successfully installed robotframework-requests-extension-0.0.6
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>
+C:\Windows\System32>
+C:\Windows\System32>
+C:\Windows\System32>pip list
+Package                           Version
+--------------------------------- ---------
+attrs                             23.2.0
+certifi                           2024.7.4
+charset-normalizer                3.3.2
+decorator                         5.1.1
+idna                              3.7
+jmespath                          1.0.1
+jsonpath-ng                       1.6.1
+jsonpath-rw                       1.4.0
+jsonpath-rw-ext                   1.2.2
+jsonschema                        4.23.0
+jsonschema-specifications         2023.12.1
+objectpath                        0.6.1
+pbr                               6.0.0
+pip                               24.0
+ply                               3.11
+pyjsonselect                      0.2.2
+referencing                       0.35.1
+requests                          2.32.3
+robotframework                    7.0.1
+robotframework-json2dictionary    0.1.1
+robotframework-jsonlibrary        0.5
+robotframework-jsonquery          1.0.3
+robotframework-jsonschemalibrary  1.0
+robotframework-jsonvalidator      2.0.0
+robotframework-requests           0.9.7
+robotframework-requests-extension 0.0.6
+rpds-py                           0.19.0
+six                               1.16.0
+urllib3                           2.2.2
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+C:\Windows\System32>
+C:\Windows\System32>python.exe -m pip install --upgrade pip
+Requirement already satisfied: pip in c:\program files\python312\lib\site-packages (24.0)
+Collecting pip
+  Downloading pip-24.1.2-py3-none-any.whl.metadata (3.6 kB)
+Downloading pip-24.1.2-py3-none-any.whl (1.8 MB)
+   ---------------------------------------- 1.8/1.8 MB 13.0 MB/s eta 0:00:00
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed pip-24.1.2
+
+C:\Windows\System32>
+C:\Windows\System32>pip list
+Package                           Version
+--------------------------------- ---------
+attrs                             23.2.0
+certifi                           2024.7.4
+charset-normalizer                3.3.2
+decorator                         5.1.1
+idna                              3.7
+jmespath                          1.0.1
+jsonpath-ng                       1.6.1
+jsonpath-rw                       1.4.0
+jsonpath-rw-ext                   1.2.2
+jsonschema                        4.23.0
+jsonschema-specifications         2023.12.1
+objectpath                        0.6.1
+pbr                               6.0.0
+pip                               24.1.2
+ply                               3.11
+pyjsonselect                      0.2.2
+referencing                       0.35.1
+requests                          2.32.3
+robotframework                    7.0.1
+robotframework-json2dictionary    0.1.1
+robotframework-jsonlibrary        0.5
+robotframework-jsonquery          1.0.3
+robotframework-jsonschemalibrary  1.0
+robotframework-jsonvalidator      2.0.0
+robotframework-requests           0.9.7
+robotframework-requests-extension 0.0.6
+rpds-py                           0.19.0
+six                               1.16.0
+urllib3                           2.2.2
+
+C:\Windows\System32>
